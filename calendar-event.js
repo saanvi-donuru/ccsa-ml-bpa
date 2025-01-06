@@ -419,7 +419,7 @@ console.log("ElementId :"+dayId);
 const dayDiv = document.getElementById(dayId);
     dayDiv.title = "Special Day: Sept 26, 2024";
     dayDiv.className = "special-day";
-    dayDiv.addEventListener('click', function() {showModal("January 3, 2025:<br><br>National Conference Pin Contest Deadline<br><br>Submit your pin design entry <a href='https://members.bpa.org/2025-nlc-pin-design-contest/' style='color: blue;'>here</a>  <br><br>For rules, judging, and guidelines click <a href='https://members.bpa.org/wp-content/uploads/sites/5/2024/10/NLC-2025-Pin-Design-Contest.pdf' style='color: blue;'>here"
+    dayDiv.addEventListener('click', function() {showModal("January 3, 2025:<br><br>National Conference Pin Contest Deadline<br><br>Submit your pin design entry <a href='https://members.bpa.org/2025-nlc-pin-design-contest/' style='color: blue;' target='_blank'>here</a>  <br><br>For rules, judging, and guidelines click <a href='https://members.bpa.org/wp-content/uploads/sites/5/2024/10/NLC-2025-Pin-Design-Contest.pdf' style='color: blue;' target='_blank'>here"
 )});
 }
  // Jan 7, 2024
