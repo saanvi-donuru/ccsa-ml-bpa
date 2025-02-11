@@ -714,12 +714,11 @@ border-top: 25px solid #ffffff;
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-<!-- Chatbot Button (Floating) -->
+
 <div id="chatbotButton" class="chatbot-button">
   <i class="fas fa-comment-dots"></i> <!-- Font Awesome chat icon -->
 </div>
 
-<!-- Chatbot Container (Initially Hidden) -->
 <div id="chatbotContainer" class="chatbot-container">
   <iframe
     src="https://www.chatbase.co/chatbot-iframe/d3r3C9H4kvPe2op5b5e56"
@@ -731,7 +730,7 @@ border-top: 25px solid #ffffff;
 </div>
 
 <style>
-  /* Floating Circular Chatbot Button */
+
   .chatbot-button {
     position: fixed;
     bottom: 30px;
@@ -755,11 +754,11 @@ border-top: 25px solid #ffffff;
     background-color: #0056b3;
   }
 
-  /* Rectangular Chatbot Container (Initially Hidden) */
+ 
   .chatbot-container {
     display: none; 
     position: fixed;
-    bottom: 30px;  /* Moved lower to 600px from the bottom */
+    bottom: 30px;  
     right: 30px;
     width: 350px;
     height: 500px;
@@ -770,7 +769,7 @@ border-top: 25px solid #ffffff;
     transition: all 0.3s ease;
   }
 
-  /* Close Button in the Chatbot Container */
+ 
   .close-chatbot {
     position: absolute;
     top: 10px;
@@ -794,13 +793,12 @@ border-top: 25px solid #ffffff;
   const chatbotContainer = document.getElementById("chatbotContainer");
   const closeButton = document.getElementById("closeChatbot");
 
-  // Show the chatbot container when the button is clicked
   chatbotButton.addEventListener("click", function () {
     chatbotButton.style.display = "none"; // Hide the chatbot button
     chatbotContainer.style.display = "block"; // Show the chatbot container
   });
 
-  // Close the chatbot when the close button is clicked
+
   closeButton.addEventListener("click", function () {
     chatbotButton.style.display = "flex"; // Show the chatbot button again
     chatbotContainer.style.display = "none"; // Hide the chatbot container
