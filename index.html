@@ -711,8 +711,7 @@ border-top: 25px solid #ffffff;
          
             </div>
           </section>
-          
-      <!-- Include FontAwesome for an icon (optional) -->
+<!-- Include FontAwesome for an icon (optional) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 <!-- The Chatbot Button -->
@@ -740,7 +739,7 @@ border-top: 25px solid #ffffff;
     right: 30px;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
+    border-radius: 50%;  /* Circle shape */
     background-color: #007bff;
     color: white;
     display: flex;
@@ -750,24 +749,24 @@ border-top: 25px solid #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     z-index: 9999;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Smooth transition */
   }
 
-  /* Optional: Change appearance on hover */
+  /* Change appearance on hover */
   .chatbot-button:hover {
     background-color: #0056b3;
   }
 
-  /* Enlarged chatbot container, hidden by default */
+  /* Enlarged chatbot container (hidden by default) */
   .chatbot-container {
-    display: none; /* Hidden initially */
+    display: none; /* Initially hidden */
     position: fixed;
-    bottom: 100px;
+    bottom: 100px; /* Position above the button */
     right: 30px;
     width: 400px;
     height: 600px;
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 8px; /* Rectangle with rounded corners */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 9998;
     transition: all 0.3s ease;
@@ -801,16 +800,17 @@ border-top: 25px solid #ffffff;
 
   // Show chatbot when the button is clicked
   chatbotButton.addEventListener("click", function () {
-    chatbotButton.style.display = "none"; // Hide the button when clicked
-    chatbotContainer.style.display = "block"; // Show the chatbot container
+    chatbotButton.style.display = "none"; // Hide the button
+    chatbotContainer.style.display = "block"; // Show the chatbot
   });
 
   // Close the chatbot when the close button is clicked
   closeButton.addEventListener("click", function () {
     chatbotButton.style.display = "flex"; // Show the button again
-    chatbotContainer.style.display = "none"; // Hide the chatbot container
+    chatbotContainer.style.display = "none"; // Hide the chatbot
   });
 </script>
+
 
         
             <br>
