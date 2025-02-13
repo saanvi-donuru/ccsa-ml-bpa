@@ -46,7 +46,7 @@ function login(event) {
     if (user) {
         alert('Login successful!');
         // Redirect or show the user dashboard
-        window.location.href = "dashboard.html"; // Example: Redirect to a dashboard page
+        window.location.href = "index.html"; // Example: Redirect to a dashboard page
     } else {
         alert('Invalid username or password.');
     }
